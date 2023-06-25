@@ -717,7 +717,7 @@ int main(int argc, char** argv)
     nh.param<bool>("publish/dense_publish_en",dense_pub_en,1);
     nh.param<bool>("publish/scan_bodyframe_pub_en",scan_body_pub_en,1);
     nh.param<int>("max_iteration",NUM_MAX_ITERATIONS,4);
-    nh.param<string>("map_file_path",map_file_path,"");
+    nh.param<string>("map_file_path",map_file_path,"/home/robit/Desktop/robit2_filtered.pcd");
     nh.param<string>("common/lid_topic",lid_topic,"/livox/lidar");
     nh.param<string>("common/imu_topic", imu_topic,"/livox/imu");
     nh.param<bool>("common/time_sync_en", time_sync_en, false);
